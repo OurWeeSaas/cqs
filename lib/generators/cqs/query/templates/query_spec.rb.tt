@@ -1,0 +1,7 @@
+require "rails_helper"
+
+describe Query::<%= class_name %> do
+  it "does something" do
+    pending "test your query"
+  end
+end

@@ -1,0 +1,9 @@
+module Command
+  class <%= class_name %>
+    include Command
+
+    def execute
+      raise CommandNotFound.new "Please implement #execute"
+    end
+  end
+end

@@ -1,0 +1,7 @@
+require "rails_helper"
+
+describe Command::<%= class_name %> do
+  it "does something" do
+    pending "test your command"
+  end
+end

@@ -1,0 +1,8 @@
+Description:
+    Creates a new Query
+
+Example:
+    bin/rails generate query MyQuery
+
+    This will create:
+        app/queries/query/my_query.rb

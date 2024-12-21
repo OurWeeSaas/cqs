@@ -1,0 +1,9 @@
+module Query
+  class <%= class_name %>
+    include Query
+
+    def answer
+      raise AnswerUnknownApology.new "Please implement #answer"
+    end
+  end
+end
