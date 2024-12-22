@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Enrique Comba Riepenhausen"]
   spec.email = ["enrique@ecomba.pro"]
 
-  spec.summary = "Command Query Segregation simplified for ruby (and rails)"
+  spec.summary = "Command Query Separation simplified for ruby (and rails)"
   spec.description = "cqs allows you to separate queries from commands for a better segregation of concerns."
   spec.homepage = "https://github.com/OurWeeSaas/cqs"
   spec.license = "MIT"
