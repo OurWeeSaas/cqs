@@ -3,7 +3,7 @@ module Cqs::Generators
     source_root File.expand_path("templates", __dir__)
 
     def create_intializer
-      template "cqs.rb.erb", Rails.root.join("config/intializers/cqs.rb")
+      template "cqs.rb.erb", Rails.root.join("config/initializers/cqs.rb")
     end
   end
 end
