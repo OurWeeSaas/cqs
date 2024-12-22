@@ -1,5 +1,7 @@
 # CQS - Command Query Separation for Ruby (and Rails)
 
+[![Gem Version](https://badge.fury.io/rb/cqs.svg)](https://badge.fury.io/rb/cqs)
+
 ⚠️ This gem (and readme) are still **Work In Progress** ⚠️
 
 Unlike [CQRS](https://martinfowler.com/bliki/CQRS.html), this gem tries to give a framework that allows to separate _Commands_ from _Queries_ in your [Ruby](https://www.ruby-lang.org) programs.
