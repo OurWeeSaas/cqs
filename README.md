@@ -1,8 +1,8 @@
-# Cqsimple
+# CQS - Command Query Segregation for Ruby (and Rails)
 
 TODO: Delete this and the text below, and describe your gem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cqsimple`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cqs`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 ## Installation
 
