@@ -7,9 +7,9 @@ module Query
 end
 
 Rails.autoloaders.main.push_dir(
-  "#{Rails.root.join("app/commands/command")}", namespace: Command
+  Rails.root.join("app/commands/command").to_s, namespace: Command
 )
 
 Rails.autoloaders.main.push_dir(
-  "#{Rails.root.join("app/queries/query")}", namespace: Query
+  Rails.root.join("app/queries/query").to_s, namespace: Query
 )
