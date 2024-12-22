@@ -4,7 +4,7 @@ require_relative "lib/cqs/version"
 
 Gem::Specification.new do |spec|
   spec.name = "cqs"
-  spec.version = CQS::VERSION
+  spec.version = Cqs::VERSION
   spec.authors = ["Enrique Comba Riepenhausen"]
   spec.email = ["enrique@ecomba.pro"]
 

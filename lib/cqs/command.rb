@@ -1,7 +1,7 @@
 require "cqs/base"
 
 module Command
-  include CQS::Base
+  include Cqs::Base
 
   def self.included(base)
     base.extend(ClassMethods)

@@ -1,4 +1,4 @@
-module CQS
+module Cqs
   class Error < StandardError; end
 
   module Base

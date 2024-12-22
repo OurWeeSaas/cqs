@@ -1,5 +1,5 @@
 Description:
-  Installs CQS
+  Installs cqs
 
 Example:
   rails generate cqs:install
