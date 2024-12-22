@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+module Command
+end
+
+modlue Query
+end
+
+Rails.autoloaders.main.push_dir(
+  "#{Rails.root}/app/command", namespace: Command
+)
+
+Rails.autoloaders.main.push_dir(
+  "#{Rails.root}/app/query", namespace: Query
+)

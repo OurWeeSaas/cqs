@@ -1,0 +1,8 @@
+Description:
+  Installs CQS
+
+Example:
+  rails generate cqs:install
+
+This will create:
+	app/initializers/cqs.rb

@@ -1,8 +1,9 @@
 Description:
-    Explain the generator
+    Creates a new Command
 
 Example:
-    bin/rails generate command MyCommand
+    bin/rails generate cqs:command MyCommand
 
     This will create:
         app/commands/command/my_command.rb
+        spec/commands/command/my_command_spec.rb
