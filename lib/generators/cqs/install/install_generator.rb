@@ -4,5 +4,6 @@ module CQS::Generators
 
     def create_intializer
       template "cqs.rb.erb", Rails.root.join("config/intializers/cqs.rb")
+    end
   end
 end
