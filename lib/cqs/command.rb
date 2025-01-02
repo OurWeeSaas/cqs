@@ -14,6 +14,10 @@ module Command
         new(subject).execute
       end
     end
+
+    def execute
+      new(nil).execute
+    end
   end
 
   def execute

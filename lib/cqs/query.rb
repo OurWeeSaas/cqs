@@ -14,6 +14,10 @@ module Query
         new(subject).answer
       end
     end
+
+    def answer
+      new(nil).answer
+    end
   end
 
   def answer
