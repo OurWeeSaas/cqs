@@ -1,18 +1,15 @@
 require "cqs/base"
 
 module Query
-  include Cqs::Base
-
   def self.included(base)
+    base.extend Cqs::Base
     base.extend(ClassMethods)
     base.register_method :in
   end
 
   module ClassMethods
     def register_method(method_name)
-      define_singleton_method(method_name) do |subject|
-        new(subject).answer
-      end
+      _register_method(method_name, :answer)
     end
 
     def answer

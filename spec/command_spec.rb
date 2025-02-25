@@ -20,6 +20,14 @@ module Command
       "I ran!"
     end
   end
+
+  class DifferentNameForSubject
+    include Command
+
+    def execute
+      string
+    end
+  end
 end
 
 RSpec.describe Command do
@@ -39,5 +47,10 @@ RSpec.describe Command do
 
   it "can execute without a subject, but it must be implemented" do
     expect(Command::Executor.execute).to eql "I ran!"
+  end
+
+  it "can change the 'subjects' name" do
+    Command::DifferentNameForSubject.subject_alias :string
+    expect { Command::DifferentNameForSubject.with("A string") }.not_to raise_error
   end
 end
