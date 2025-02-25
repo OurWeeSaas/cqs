@@ -23,6 +23,7 @@ module Command
 
   class DifferentNameForSubject
     include Command
+    subject_alias :string
 
     def execute
       string
@@ -50,7 +51,6 @@ RSpec.describe Command do
   end
 
   it "can change the 'subjects' name" do
-    Command::DifferentNameForSubject.subject_alias :string
     expect { Command::DifferentNameForSubject.with("A string") }.not_to raise_error
   end
 end

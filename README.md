@@ -132,6 +132,24 @@ module Query
 end
 ```
 
+Sometimes, to make your code more readable when implementing either a `Command` or a `Query`, you may
+want to alias the `subject`. When we do this we can use our aliased name instead of the `subject` itself
+like so:
+
+```ruby
+module Query
+  class FindUser
+    include Query
+    register_method :by
+    subject_alias :email_address
+
+    def answer
+      User.find_by(email_address)
+    end
+  end
+end
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bundle execute rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
